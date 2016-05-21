@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="3"
+    tools:context="com.example.uvaeventfinder.LoginActivity" >
+<TableRow>
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logotopo" 
+            android:contentDescription="@string/strlogo"/>
+
+	</TableRow>
+
+	<TableRow>
+
+	    <ImageButton
+	        android:id="@+id/imageButton1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/linear1"
+	        android:layout_weight="1"
+	        android:src="@drawable/btnmenu" />
+
+	    <EditText
+	        android:id="@+id/editText1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="4"
+	        android:ems="10" android:inputType="text">
+
+	        <requestFocus />
+	    </EditText>
+
+	    <ImageButton
+	        android:id="@+id/imgbtBusca"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"	   	        
+	        android:layout_weight="1"
+	        android:src="@drawable/btnbusca"
+	        android:contentDescription="Botao de Busca" />
+	</TableRow>
+
+	<TableRow android:gravity="top" >
+
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="top"
+	        android:layout_marginTop="15dp"
+	        android:text="@string/proximoseventos"
+	        android:textSize="@dimen/FontGrande"
+	        android:textStyle="bold" />
+
+	</TableRow>
+
+	<TableRow
+	    android:id="@+id/tableRow1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" >
+	</TableRow>
+
+	<ListView
+	    android:id="@+id/listView1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    tools:listitem="@android:layout/simple_list_item_checked" >
+
+	</ListView>
+
+</TableLayout>

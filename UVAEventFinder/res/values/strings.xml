@@ -4,5 +4,9 @@
     <string name="app_name">UVAEventFinder</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="proximoseventos">Próximos Eventos</string>
+    <string name="strLogin">Login</string>
+    <string name="strSenha">Senha:</string>
+    <string name="strlogo">Logo</string>
 
 </resources>
