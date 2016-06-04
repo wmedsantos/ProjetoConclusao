@@ -7,7 +7,7 @@ import android.view.MenuItem;
 import android.view.Window;
 
 public class DescricaoActivity  extends Activity {
-	
+	//teste
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
