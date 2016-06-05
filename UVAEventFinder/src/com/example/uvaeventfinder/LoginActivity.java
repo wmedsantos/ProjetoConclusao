@@ -20,7 +20,7 @@ public class LoginActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
+//        requestWindowFeature(Window.FEATURE_NO_TITLE);
         
         btnLogin = (Button) findViewById(R.id.btnLogin);
         btnLogin.setOnClickListener(new OnClickListener() {

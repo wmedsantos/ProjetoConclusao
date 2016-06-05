@@ -1,44 +1,112 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/RelativeLayout1"
+    android:id="@+id/TableLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:columnCount="4"
-    tools:context="${relativePackage}.${activityClass}" >
+    android:collapseColumns="1"
+    android:columnCount="1"
+    android:gravity="left|center"
+    android:shrinkColumns="1"
+    android:stretchColumns="1"
+    tools:context="com.example.uvaeventfinder.DescricaoActivity" >
+
     <TableRow
+        android:id="@+id/tableRow9"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="top"
+        android:layout_weight="1"
+        android:gravity="top" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:contentDescription="@string/strlogo"
+            android:scaleType="fitStart"
+            android:src="@drawable/logotopo"
+            tools:ignore="HardcodedText" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+
+        <ImageView
+            android:id="@+id/imgEvento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/strlogo"
+            android:scaleType="fitStart"
+            android:src="@drawable/webday2016"
+            tools:ignore="HardcodedText" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txvDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:inputType="textMultiLine"
+            android:lines="@integer/linhaTexto"
+            android:maxLines="4"
+            android:text="Este será um evento técnico, onde os \n conceitos atuais serão vistos mais a fundo.\n Pelo conceitoado Professor Hércules. \nSerão permitidis até 250 inscritos."
+            android:textColor="#008800"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </TableRow>
+
+   
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+ <TableRow
         android:id="@+id/tableRow7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/tableRow8"
         android:layout_alignLeft="@+id/tableRow8" >
-        
+
         <TextView
             android:id="@+id/textView13"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Vagas Disponíveis:"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView14"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="250"
             android:textColor="#00F" />
-
     </TableRow>
 
     <TableRow
         android:id="@+id/tableRow6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/tableRow7"
-        android:layout_alignLeft="@+id/tableRow7" >
+        android:layout_above="@+id/tableRow7">
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Endereço:"
             android:textStyle="bold" />
 
@@ -46,18 +114,11 @@
             android:id="@+id/textView12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Rua Ibituruna, 52"
             android:textColor="#00F" />
 
     </TableRow>
-
-    <TableLayout
-        android:id="@+id/tableLayout1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/tableRow6"
-        android:layout_alignLeft="@+id/tableRow6" >
-
         <TableRow
             android:id="@+id/tableRow1"
             android:layout_width="wrap_content"
@@ -76,7 +137,6 @@
                 android:layout_height="wrap_content"
                 android:text="Minicurso"
                 android:textColor="#00F" />
-
         </TableRow>
 
         <TableRow
@@ -97,7 +157,6 @@
                 android:layout_height="wrap_content"
                 android:text="25/04/2016 10:00h"
                 android:textColor="#00F" />
-
         </TableRow>
 
         <TableRow
@@ -118,7 +177,6 @@
                 android:layout_height="wrap_content"
                 android:text="25/04/2016 15:00h"
                 android:textColor="#00F" />
-
         </TableRow>
 
         <TableRow
@@ -139,7 +197,6 @@
                 android:layout_height="wrap_content"
                 android:text="Auditório UVA"
                 android:textColor="#00F" />
-
         </TableRow>
 
         <TableRow
@@ -160,7 +217,6 @@
                 android:layout_height="wrap_content"
                 android:text="eventos.uva.br/webday2016"
                 android:textColor="#00F" />
-
         </TableRow>
     </TableLayout>
 
@@ -168,8 +224,6 @@
         android:id="@+id/tableRow8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button1"
-        android:layout_alignParentLeft="true"
         android:layout_marginBottom="21dp" >
 
         <TextView
@@ -184,66 +238,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sim" />
-
     </TableRow>
-    
-        <TextView
-            android:id="@+id/txvDescricao"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/tableLayout1"
-            android:layout_alignParentLeft="true"
-            android:inputType="textMultiLine"
-            android:text="Este será um evento técnico, onde os conceitos atuais serão vistos mais a fundo. Pelo conceitoado Professor Hércules. Serão permitidis até 250 inscritos."
-            android:textColor="#008800"
-            android:textSize="15sp"
-            android:textStyle="bold" />
-
- 
-
-    <Button
-        android:id="@+id/button1"
+	<TableRow
+        android:id="@+id/tableRowOpiniao"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:text="Dê sua opinião sobre o evento"
-        android:textSize="15sp" />
-
-    <TableRow
-        android:id="@+id/tableRow9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:gravity="top" >
-
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top"
-            android:contentDescription="@string/strlogo"
-            android:src="@drawable/logotopo"
-            tools:ignore="HardcodedText" />
-
-    </TableRow>
-
-    <TableRow
-        android:id="@+id/tableRow10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="52dp" >
-
-        <ImageView
-            android:id="@+id/imgEvento"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            
-            android:contentDescription="@string/strlogo"
-            android:src="@drawable/logotopo"
-            tools:ignore="HardcodedText" />
-    </TableRow>
-
-</RelativeLayout>
+        android:layout_height="wrap_content">
+        
+	    <Button
+	        android:id="@+id/button1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Dê sua opinião sobre o evento"
+	        android:textSize="15sp" />
+	</TableRow>
+</TableLayout>
