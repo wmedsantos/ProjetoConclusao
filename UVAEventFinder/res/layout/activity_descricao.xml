@@ -6,21 +6,21 @@
     android:columnCount="4"
     tools:context="${relativePackage}.${activityClass}" >
     <TableRow
-        android:id="@+id/tableRow7"
+        android:id="@+id/table_Vag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/tableRow8"
-        android:layout_alignLeft="@+id/tableRow8" >
+        android:layout_above="@+id/table_Confirm"
+        android:layout_alignLeft="@+id/table_Confirm" >
         
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/textView_vagas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Vagas Disponíveis:"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/textView_vagasResp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="250"
@@ -29,21 +29,21 @@
     </TableRow>
 
     <TableRow
-        android:id="@+id/tableRow6"
+        android:id="@+id/table_endereco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/tableRow7"
-        android:layout_alignLeft="@+id/tableRow7" >
+        android:layout_above="@+id/table_Vag"
+        android:layout_alignLeft="@+id/table_Vag" >
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/textView_endereco"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Endereço:"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/textView_enderecoResp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Rua Ibituruna, 52"
@@ -52,26 +52,26 @@
     </TableRow>
 
     <TableLayout
-        android:id="@+id/tableLayout1"
+        android:id="@+id/tableLayout_Especif"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/tableRow6"
-        android:layout_alignLeft="@+id/tableRow6" >
+        android:layout_above="@+id/table_endereco"
+        android:layout_alignLeft="@+id/table_endereco" >
 
         <TableRow
-            android:id="@+id/tableRow1"
+            android:id="@+id/table_tema"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
 
             <TextView
-                android:id="@+id/textView1"
+                android:id="@+id/textView_tema"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tema:"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/textView_temaResp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Minicurso"
@@ -80,19 +80,19 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow2"
+            android:id="@+id/table_inicio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/textView_inicio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Início:"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/textView_inicioResp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="25/04/2016 10:00h"
@@ -101,19 +101,19 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow3"
+            android:id="@+id/table_fim"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/textView_fim"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Fim:"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/textView_fimResp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="25/04/2016 15:00h"
@@ -122,19 +122,19 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow4"
+            android:id="@+id/table_local"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/textView_local"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Local:"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/textView_localResp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Auditório UVA"
@@ -143,19 +143,19 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow5"
+            android:id="@+id/table_site"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/textView_site"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Site:"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/textView_siteResp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="eventos.uva.br/webday2016"
@@ -165,22 +165,22 @@
     </TableLayout>
 
     <TableRow
-        android:id="@+id/tableRow8"
+        android:id="@+id/table_Confirm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button1"
+        android:layout_above="@+id/button_OP"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="21dp" >
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/textView_inscrever"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Deseja se Inscrever?"
             android:textStyle="bold" />
 
         <CheckBox
-            android:id="@+id/checkBox1"
+            android:id="@+id/checkBox_inscreverResp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sim" />
@@ -191,7 +191,7 @@
             android:id="@+id/txvDescricao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/tableLayout1"
+            android:layout_above="@+id/tableLayout_Especif"
             android:layout_alignParentLeft="true"
             android:inputType="textMultiLine"
             android:text="Este será um evento técnico, onde os conceitos atuais serão vistos mais a fundo. Pelo conceitoado Professor Hércules. Serão permitidis até 250 inscritos."
@@ -202,7 +202,7 @@
  
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/button_OP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -211,14 +211,14 @@
         android:textSize="15sp" />
 
     <TableRow
-        android:id="@+id/tableRow9"
+        android:id="@+id/table_imgLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:gravity="top" >
 
         <ImageView
-            android:id="@+id/imageView1"
+            android:id="@+id/imageView_logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="top"
@@ -229,7 +229,7 @@
     </TableRow>
 
     <TableRow
-        android:id="@+id/tableRow10"
+        android:id="@+id/table_imgEvento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
