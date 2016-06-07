@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:stretchColumns="3"
-    tools:context="com.example.uvaeventfinder.LoginActivity" >
+    tools:context="com.example.uvaeventfinder.ListaEventosActivity" >
 <TableRow>
         <ImageView
             android:id="@+id/imageView1"
@@ -69,7 +69,8 @@
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
 	    tools:listitem="@android:layout/simple_list_item_checked" >
-
+<!-- 	    android:drag_start_mode="onMove" -->
+	    
 	</ListView>
 
 </TableLayout>
