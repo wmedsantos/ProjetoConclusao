@@ -31,20 +31,24 @@ public final class R {
     }
     public static final class id {
         public static final int RelativeLayout1=0x7f080000;
-        public static final int action_settings=0x7f08002b;
+        public static final int action_settings=0x7f080033;
         public static final int btnCriarConta=0x7f08002a;
         public static final int btnLogin=0x7f080029;
+        public static final int btnSalvarUsuario=0x7f080032;
         public static final int button1=0x7f080018;
         public static final int checkBox1=0x7f08001a;
         public static final int editText1=0x7f080022;
+        public static final int edtConfirmarSenha=0x7f080031;
+        public static final int edtEmail=0x7f08002e;
         public static final int edtLogin=0x7f080026;
         public static final int edtSenha=0x7f080028;
+        public static final int edtUsuario=0x7f08002c;
         public static final int imageButton1=0x7f080020;
         public static final int imageView1=0x7f08001d;
         public static final int imgEvento=0x7f08001f;
         public static final int imgbtBusca=0x7f080023;
         public static final int linear1=0x7f080021;
-        public static final int listView1=0x7f080024;
+        public static final int ltvEventos=0x7f080024;
         public static final int tableLayout1=0x7f080008;
         public static final int tableRow1=0x7f080009;
         public static final int tableRow10=0x7f08001e;
@@ -71,7 +75,11 @@ public final class R {
         public static final int textView7=0x7f080013;
         public static final int textView8=0x7f080014;
         public static final int textView9=0x7f080016;
+        public static final int txvConfirmarSenha=0x7f080030;
         public static final int txvDescricao=0x7f08001b;
+        public static final int txvEmail=0x7f08002d;
+        public static final int txvSenha=0x7f08002f;
+        public static final int txvUsuario=0x7f08002b;
         public static final int txwLogin=0x7f080025;
         public static final int txwSenha=0x7f080027;
     }
@@ -79,9 +87,11 @@ public final class R {
         public static final int activity_descricao=0x7f030000;
         public static final int activity_listaeventos=0x7f030001;
         public static final int activity_login=0x7f030002;
+        public static final int activity_usuario=0x7f030003;
     }
     public static final class menu {
         public static final int login=0x7f070000;
+        public static final int usuario=0x7f070001;
     }
     public static final class string {
         public static final int action_settings=0x7f050002;
@@ -91,6 +101,7 @@ public final class R {
         public static final int strLogin=0x7f050004;
         public static final int strSenha=0x7f050005;
         public static final int strlogo=0x7f050006;
+        public static final int title_activity_usuario=0x7f050007;
     }
     public static final class style {
         /** 

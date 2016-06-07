@@ -65,7 +65,7 @@
 	</TableRow>
 
 	<ListView
-	    android:id="@+id/listView1"
+	    android:id="@+id/ltvEventos"
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
 	    tools:listitem="@android:layout/simple_list_item_checked" >

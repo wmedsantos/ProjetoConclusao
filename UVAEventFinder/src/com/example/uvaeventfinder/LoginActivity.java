@@ -6,17 +6,21 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.Window;
 import android.widget.Button;
 import android.content.Intent;
 
 public class LoginActivity extends Activity {
 	
 	Button btnLogin;
-
+	Button btnCriarUsuario;
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         
         btnLogin = (Button) findViewById(R.id.btnLogin);
         btnLogin.setOnClickListener(new OnClickListener() {
@@ -25,6 +29,18 @@ public class LoginActivity extends Activity {
 			public void onClick(View a) {
 				// TODO Auto-generated method stub
 				Intent intent = new Intent(getApplicationContext(), ListaEventosActivity.class );
+				startActivity(intent);
+			}
+		}); 
+        
+
+        btnCriarUsuario = (Button) findViewById(R.id.btnCriarConta);
+        btnCriarUsuario.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View a) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(getApplicationContext(), UsuarioActivity.class );
 				startActivity(intent);
 			}
 		}); 

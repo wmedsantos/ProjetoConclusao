@@ -1,0 +1,119 @@
+<TableLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    tools:context="com.example.uvaeventfinder.UsuarioActivity" >
+ 
+ <TableRow android:gravity="top" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/strlogo"
+            android:src="@drawable/logotopo"
+            tools:ignore="HardcodedText" />
+    </TableRow>
+<TableRow android:gravity="center" >
+
+        <TextView
+            android:id="@+id/txvUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="45dp"
+            android:text="Usuário:"
+            android:textStyle="bold" />
+    </TableRow>
+    <TableRow android:gravity="center" >
+
+        <EditText
+            android:id="@+id/edtUsuario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            android:ems="10"
+            android:inputType="text"
+            android:labelFor="@+id/txvUsuario" />
+    </TableRow>
+<TableRow android:gravity="center" >
+
+        <TextView
+            android:id="@+id/txvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:text="Email:"
+            android:textStyle="bold" />
+    </TableRow>
+    <TableRow android:gravity="center" >
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            android:ems="10"
+            android:inputType="text"
+            android:labelFor="@+id/txvEmail" />
+    </TableRow>
+<TableRow android:gravity="center" >
+
+        <TextView
+            android:id="@+id/txvSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:text="Senha:"
+            android:textStyle="bold" />
+    </TableRow>
+    <TableRow android:gravity="center" >
+
+        <EditText
+            android:id="@+id/edtSenha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            android:ems="10"
+            android:inputType="text"
+            android:labelFor="@+id/txvSenha" />
+    </TableRow>
+<TableRow android:gravity="center" >
+
+        <TextView
+            android:id="@+id/txvConfirmarSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"            
+            android:text="Confirmar Senha:"
+            android:textStyle="bold" />
+    </TableRow>
+    <TableRow android:gravity="center" >
+
+        <EditText
+            android:id="@+id/edtConfirmarSenha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            android:ems="10"
+            android:inputType="text"
+            android:labelFor="@+id/txvConfirmarSenha" />
+    </TableRow>
+    <TableRow
+        android:gravity="center" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnSalvarUsuario"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Criar Usuário" />
+
+    </TableRow>    
+    </TableLayout>
