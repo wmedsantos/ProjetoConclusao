@@ -235,15 +235,17 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="52dp" >
-
-        <ImageView
-            android:id="@+id/imgEvento"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            
-            android:contentDescription="@string/strlogo"
-            android:src="@drawable/logotopo"
-            tools:ignore="HardcodedText" />
     </TableRow>
+
+    <ImageView
+        android:id="@+id/imgEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txvDescricao"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="35dp"
+        android:contentDescription="@string/strlogo"
+        android:src="@drawable/logotopo"
+        tools:ignore="HardcodedText" />
 
 </RelativeLayout>

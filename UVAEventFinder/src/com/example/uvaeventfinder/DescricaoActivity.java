@@ -5,8 +5,28 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.Window;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class DescricaoActivity  extends Activity {
+	
+	TextView textView_temaResp;
+	TextView textView_inicioResp;
+	TextView textView_fimResp;
+	TextView textView_localResp;
+	TextView textView_siteResp;
+	TextView textView_enderecoResp;
+	TextView textView_vagasResp;
+	TextView txvDescricao;
+	
+	ImageView imgEvento;
+	
+	Button button_OP;
+	
+	CheckBox checkBox_inscreverResp;
+	
 	//teste
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
