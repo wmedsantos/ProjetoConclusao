@@ -9,5 +9,6 @@
     <string name="strSenha">Senha:</string>
     <string name="strlogo">Logo</string>
     <string name="title_activity_usuario">Cadastro de Usuário</string>
+    <string name="title_activity_comentarios">MainActivity</string>
 
 </resources>

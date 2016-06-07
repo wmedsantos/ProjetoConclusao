@@ -13,20 +13,31 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        <activity android:name=".LoginActivity" android:label="Login">
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ListaEventosActivity" android:label="Eventos">
+        <activity
+            android:name=".ListaEventosActivity"
+            android:label="Eventos" >
         </activity>
         <activity
             android:name=".UsuarioActivity"
             android:label="@string/title_activity_usuario" >
         </activity>
-        <activity android:name="DescricaoActivity" android:label="Evento"></activity>
+        <activity
+            android:name=".DescricaoActivity"
+            android:label="Evento" >
+        </activity>
+        <activity
+            android:name=".ComentariosActivity"
+            android:label="@string/title_activity_comentarios" >
+        </activity>
     </application>
 
 </manifest>
