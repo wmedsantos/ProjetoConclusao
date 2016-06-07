@@ -7,13 +7,13 @@ import android.view.MenuItem;
 import android.view.Window;
 
 public class DescricaoActivity  extends Activity {
-	//teste
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_descricao);
 
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
+//        requestWindowFeature(Window.FEATURE_NO_TITLE);
 	
 	}
 
