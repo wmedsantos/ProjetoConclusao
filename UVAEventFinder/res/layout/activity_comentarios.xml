@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/logotopo" />
+
+    <ImageView
+        android:id="@+id/image_evento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/image_logo"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/webday2016" />
+
+    <TextView
+        android:id="@+id/text_opniao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/image_evento"
+        android:layout_marginTop="26dp"
+        android:text="Voçe gostou do evento?" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_opiniao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/text_opniao"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_gostei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Gostei" />
+
+        <RadioButton
+            android:id="@+id/radio_ngostei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Não Gostei" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/text_sugestao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/radioGroup_opiniao"
+        android:layout_marginTop="32dp"
+        android:text="Elogio ou sugestão" />
+
+    <TextView
+        android:id="@+id/text_esp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_sugestao"
+        android:layout_alignBottom="@+id/text_sugestao"
+        android:layout_alignRight="@+id/image_evento"
+        android:text="140" />
+
+    <EditText
+        android:id="@+id/edit_opiniao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/text_sugestao"
+        android:layout_marginBottom="71dp"
+        android:ems="10"
+        android:maxLength="140"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/button_enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="Enviar" />
+
+</RelativeLayout>
