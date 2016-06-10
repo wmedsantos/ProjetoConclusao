@@ -25,9 +25,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		// TODO Auto-generated method stub
 		
 		//Tabela Aluno
-		db.execSQL("create table aluno(_id integer autoincrement,"+
-		"nome text not null,curso text not null,campus text not null,"+
-				"login text not null,senha text not null)");	
+		db.execSQL("CREATE TABLE aluno(_matr INTEGER PRIMARY KEY,nome TEXT NOT NULL"+
+		"email TEXT NOT NULL,curso TEXT NOT NULL,campus TEXT NOT NULL,"+
+				"senha TEXT NOT NULL DEFAULT 'uva')");	
 		
 		
 	}
