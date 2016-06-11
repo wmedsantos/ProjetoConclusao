@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="top"
             android:layout_marginTop="45dp"
-            android:text="Usuário:"
+            android:text="Usuário ou Matrícula UVA:"
             android:textStyle="bold" />
     </TableRow>
     <TableRow android:gravity="center" >

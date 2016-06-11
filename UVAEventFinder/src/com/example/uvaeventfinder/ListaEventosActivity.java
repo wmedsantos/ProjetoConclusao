@@ -68,6 +68,7 @@ public class ListaEventosActivity extends Activity {
 	                     int index, long arg3) {
 	            	 //Toast.makeText(list.this,myList.getItemAtPosition(index).toString(), Toast.LENGTH_LONG).show();
 	            	 Intent intent = new Intent(getApplicationContext(), DescricaoActivity.class );
+
 	 				startActivity(intent);
 	                 return false;
 	             }

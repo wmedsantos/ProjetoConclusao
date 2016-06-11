@@ -24,7 +24,7 @@ public class DescricaoActivity  extends Activity {
 		
 		btnComentario = (Button) findViewById(R.id.btnComentario);
 		btnComentario.setOnClickListener(new OnClickListener() {
-			
+       	 //imgEvento.src="@drawable/" + String.substring(Evento.Imagem, 0, String.length(Evento.Imagem)-4);	
 			@Override
 			public void onClick(View a) {
 				// TODO Auto-generated method stub

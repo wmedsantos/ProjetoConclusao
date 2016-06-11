@@ -82,6 +82,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="5"
+            android:minWidth="100dp"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:text="Login" />
