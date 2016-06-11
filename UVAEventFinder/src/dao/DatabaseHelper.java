@@ -58,8 +58,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		"REFERENCES localizacao(_id)");
 		
 		//Tabela Inscrição
-		db.execSQL("CREATE TABLE inscricao(_id INTEGER PRIMARY KEY, _id_publico INTEGER NOT NULL"+
-		"_id_aluno INTEGER NOT NULL, _id_sessao INTEGER NOT NULL,data NUMERIC,FOREIGN KEY "+
+		db.execSQL("CREATE TABLE inscricao(_id INTEGER PRIMARY KEY, _id_publico INTEGER"+
+		"_id_aluno INTEGER, _id_sessao INTEGER NOT NULL,data TEXT,FOREIGN KEY "+
 		"(_id_publico) REFERENCES publico(_id),FOREIGN KEY (_id_aluno) REFERENCES"+
 		"aluno(_id), FOREIGN KEY (_id_sessao) REFERENCES sessao(_id))");
 		
@@ -79,7 +79,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 				"'2016-06-20 09:30','2016-6-25 12:30')");
 		db.execSQL("INSERT INTO endereco(_id,rua,numero,complemento,bairro,cidade,estado,cep) VALUES"+
 				"(1,'Rua Ibituruna','108','Em frente ao metrô São Cristóvão','Tijuca','Rio de Janeiro','RJ','20.271-020')");
-		db.execSQL("INSERT INTO localizacao(_id,_id_endereco,bloco,andar,sala,vaga,) VALUES (11,1,'B','Térreo','127','6',25)");
+		db.execSQL("INSERT INTO localizacao(_id,_id_endereco,bloco,andar,sala,vaga) VALUES (11,1,'B','Térreo','127','6',25)");
 		db.execSQL("INSERT INTO sessao(_id,_id_evento,_id_palestrante,_id_endereco,_id_local,tema,sintese"+
 				"'inicio,fim,cargahora) VALUES (20160101,201601,1,1,11,'Programação para Dispositivos Móveis Android: Uma abrodagem prática'"+
 				"'Minicurso com enfoque em boas práticas no gerenciamento e desenvolvimento Ágil','2016-06-23 09:30','2016-06-23 11:30',4)");
@@ -91,5 +91,136 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		// TODO Auto-generated method stub
 		
 	}
+	
+	public static class Aluno{
+		public static final String TABELA ="aluno";
+		public static final String _MATR = "_matr";
+		public static final String NOME = "nome";
+		public static final String EMAIL = "email";
+		public static final String CURSO = "curso";
+		public static final String CAMPUS = "campus";
+		public static final String SENHA = "senha";
+		
+		public static final String[] COLUNAS = new String[]{
+				_MATR,NOME,EMAIL,CURSO,CAMPUS,SENHA
+		};
+	}
+	
+	public static class Publico{
+		public static final String TABELA ="publico";
+		public static final String _ID = "_id";
+		public static final String NOME = "nome";
+		public static final String EMAIL = "email";
+		public static final String SENHA = "senha";
+		
+		public static final String[] COLUNAS = new String[]{
+				_ID,NOME,EMAIL,SENHA
+		};
+	}
+	
+	public static class Palestrante{
+		public static final String TABELA ="palestrante";
+		public static final String _ID = "_id";
+		public static final String NOME = "nome";
+		public static final String ORIGEM = "origem";
+		public static final String CARGO = "cargo";
+		public static final String OBSERVACAO = "observacao";
+		public static final String EMAIL = "email";
+				
+		public static final String[] COLUNAS = new String[]{
+				_ID,NOME,ORIGEM,CARGO,OBSERVACAO,EMAIL
+		};
+	}
+	
+	public static class Evento{
+		public static final String TABELA ="evento";
+		public static final String _ID = "_id";
+		public static final String TEMA = "tema";
+		public static final String INICIO = "inicio";
+		public static final String FIM = "fim";
+						
+		public static final String[] COLUNAS = new String[]{
+				_ID,TEMA,INICIO,FIM
+		};
+	}
+	
+	public static class Endereco{
+		public static final String TABELA ="endereco";
+		public static final String _ID = "_id";
+		public static final String RUA = "rua";
+		public static final String NUMERO = "numero";
+		public static final String COMPLEMENTO = "complemento";
+		public static final String BAIRRO = "bairro";
+		public static final String CIDADE = "cidade";
+		public static final String ESTADO = "estado";
+		public static final String CEP = "cep";
+		
+				
+		public static final String[] COLUNAS = new String[]{
+				_ID,RUA,NUMERO,COMPLEMENTO,BAIRRO,CIDADE,ESTADO,CEP
+		};
+	}
+	
+	public static class Localizacao{
+		public static final String TABELA ="localizacao";
+		public static final String _ID = "_id";
+		public static final String _ID_ENDERECO = "_id_endereco";
+		public static final String BLOCO = "bloco";
+		public static final String ANDAR = "andar";
+		public static final String SALA = "sala";
+		public static final String VAGA = "vaga";		
+		
+				
+		public static final String[] COLUNAS = new String[]{
+				_ID,_ID_ENDERECO,BLOCO,ANDAR,SALA,VAGA
+		};
+	}
+	
+	public static class Sessao{
+		public static final String TABELA ="sessao";
+		public static final String _ID = "_id";
+		public static final String _ID_EVENTO = "_id_evento";
+		public static final String _ID_PALESTRANTE = "_id_palestrante";
+		public static final String _ID_LOCAL = "_id_local";
+		public static final String TEMA = "tema";
+		public static final String SINTESE = "sintese";
+		public static final String INICIO = "inicio";
+		public static final String FIM = "fim";
+		public static final String CARGAHORA = "cargahora";
+		public static final String IMAGEM = "imagem";
+		
+				
+		public static final String[] COLUNAS = new String[]{
+				_ID,_ID_EVENTO,_ID_PALESTRANTE,_ID_LOCAL,TEMA,SINTESE,INICIO,FIM,CARGAHORA,IMAGEM
+		};
+	}
+	
+	public static class Inscricao{
+		public static final String TABELA ="inscricao";
+		public static final String _ID = "_id";
+		public static final String _ID_PUBLICO = "_id_publico";
+		public static final String _ID_ALUNO = "_id_aluno";
+		public static final String _ID_SESSAO = "_id_sessao";
+		public static final String DATA = "data";
+		
+				
+		public static final String[] COLUNAS = new String[]{
+				_ID,_ID_PUBLICO,_ID_ALUNO,_ID_SESSAO,DATA
+		};
+	}
+	
+	public static class Opiniao{
+		public static final String TABELA ="inscricao";
+		public static final String _ID = "_id";
+		public static final String _ID_SESSAO = "_id_sessao";
+		public static final String POSITIVA = "positiva";
+		public static final String SUGESTAO = "sugestao";		
+		
+				
+		public static final String[] COLUNAS = new String[]{
+				_ID,_ID_SESSAO,POSITIVA,SUGESTAO
+		};
+	}
+
 
 }
