@@ -61,6 +61,20 @@ public class ListaEventosActivity extends Activity {
 	                 listaEventos );
 
 	         ltvEventos.setAdapter(arrayAdapter); 
+	         
+	         int count = ltvEventos.getCount();
+	         for (int i = 0; i < count; i++)
+	        	 ltvEventos.setItemChecked(i, true);
+	         
+	         ltvEventos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+	             public void onItemClick(AdapterView<?> parent, View itemClicked, int 
+	                                                     position, long id) {
+	            	 
+	            	   CheckedTextView textView = (CheckedTextView)itemClicked;
+			           textView.setChecked(!textView.isChecked());
+	             } 
+	         });
 
 	         ltvEventos.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
 
