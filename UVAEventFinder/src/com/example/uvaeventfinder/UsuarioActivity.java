@@ -51,7 +51,7 @@ public class UsuarioActivity extends Activity {
 				strSenha = edtSenha.getText().toString();
 				strConfirmarSenha = edtConfirmarSenha.getText().toString();
 
-				if (strUsuario.isEmpty() && strEmail.isEmpty() && strSenha.isEmpty()  && strConfirmarSenha.isEmpty() ) {
+				if (!strUsuario.isEmpty() && !strEmail.isEmpty() && !strSenha.isEmpty()  && !strConfirmarSenha.isEmpty() ) {
 					if (strSenha.equals(strConfirmarSenha)){
 						
 		                new AsyncPutUsuario().execute();
@@ -62,8 +62,19 @@ public class UsuarioActivity extends Activity {
 					}
 					
 				}else{
-					Toast.makeText(getApplicationContext(), "É necessário preencher todos os campos.",
+					//Toast.makeText(getApplicationContext(), "É necessário preencher todos os campos.",
+							 //  Toast.LENGTH_LONG).show();
+					Toast.makeText(getApplicationContext(), strUsuario.concat("U"),
 							   Toast.LENGTH_LONG).show();
+					Toast.makeText(getApplicationContext(), strEmail.concat("E"),
+							   Toast.LENGTH_LONG).show();
+					
+					Toast.makeText(getApplicationContext(), strSenha.concat("S") ,
+							   Toast.LENGTH_LONG).show();  					
+					Toast.makeText(getApplicationContext(), strConfirmarSenha.concat("SC"),
+							   Toast.LENGTH_LONG).show();
+					
+					
 				}
 			}
 		}); 	
@@ -101,7 +112,8 @@ public class UsuarioActivity extends Activity {
         private String email;
         private String senha;
         //public static final String postUrl = "http://189.60.228.5:3000/posts.json";
-        public static final String UsuarioUrl = "https://eventfinder-wmedsantos.c9users.io/usuarios.json";
+        public static final String UsuarioUrl = "https://eventfinder-wmedsantos.c9users.io/usuarios";
+
 
         @Override
         protected void onPreExecute() {
@@ -126,14 +138,15 @@ public class UsuarioActivity extends Activity {
             param = new JSONObject();
 
             try {
-                //param.put("usuario", usuario);
-                param.put("email", email);
-                param.put("password", senha);
+                param.put("nome", usuario);
                 param.put("password_confirmation", senha);
+                param.put("password", senha);
+                param.put("email", email);
             }
             catch(Exception e)
             {
                 e.printStackTrace();
+                Log.i("jsonObject: ", "> ERRO");
             }
             finally {
                 Log.i("jsonObject: ", "> " + param.toString());
