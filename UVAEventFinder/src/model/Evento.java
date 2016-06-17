@@ -12,18 +12,17 @@ public class Evento {
 	private String tema;
 	private String inicio;
 	private String fim;
-	
-	public Evento (){
-		
+
+	public Evento() {
+
 	}
-	
-	public Evento (Integer id,String tema,String inicio,String fim){
+
+	public Evento(Integer id, String tema, String inicio, String fim) {
 		this.set_id(id);
 		this.setTema(tema);
 		this.setInicio(inicio);
 		this.setFim(fim);
-		
-		
+
 	}
 
 	/**
@@ -34,7 +33,8 @@ public class Evento {
 	}
 
 	/**
-	 * @param _id the _id to set
+	 * @param _id
+	 *            the _id to set
 	 */
 	public void set_id(Integer _id) {
 		this._id = _id;
@@ -48,7 +48,8 @@ public class Evento {
 	}
 
 	/**
-	 * @param tema the tema to set
+	 * @param tema
+	 *            the tema to set
 	 */
 	public void setTema(String tema) {
 		this.tema = tema;
@@ -62,7 +63,8 @@ public class Evento {
 	}
 
 	/**
-	 * @param inicio the inicio to set
+	 * @param inicio
+	 *            the inicio to set
 	 */
 	public void setInicio(String inicio) {
 		this.inicio = inicio;
@@ -76,7 +78,8 @@ public class Evento {
 	}
 
 	/**
-	 * @param fim the fim to set
+	 * @param fim
+	 *            the fim to set
 	 */
 	public void setFim(String fim) {
 		this.fim = fim;

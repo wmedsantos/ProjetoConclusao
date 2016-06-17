@@ -31,7 +31,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		
 		//Tabela Palestrante
 		db.execSQL("CREATE TABLE palestrante(_id INTEGER PRIMARY KEY,nome TEXT NOT NULL"+
-		"origem TEXT,cargo TEXT,observacao,email TEXT)");
+		"origem TEXT,cargo TEXT,observacao TEXT,email TEXT)");
 		
 		//Tabela Evento
 		db.execSQL("CREATE TABLE evento(_id INTEGER PRIMARY KEY,tema TEXT NOT NULL"+
