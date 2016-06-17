@@ -62,17 +62,17 @@ public class UsuarioActivity extends Activity {
 					}
 					
 				}else{
-					//Toast.makeText(getApplicationContext(), "É necessário preencher todos os campos.",
-							 //  Toast.LENGTH_LONG).show();
-					Toast.makeText(getApplicationContext(), strUsuario.concat("U"),
+					Toast.makeText(getApplicationContext(), "É necessário preencher todos os campos.",
 							   Toast.LENGTH_LONG).show();
-					Toast.makeText(getApplicationContext(), strEmail.concat("E"),
-							   Toast.LENGTH_LONG).show();
-					
-					Toast.makeText(getApplicationContext(), strSenha.concat("S") ,
-							   Toast.LENGTH_LONG).show();  					
-					Toast.makeText(getApplicationContext(), strConfirmarSenha.concat("SC"),
-							   Toast.LENGTH_LONG).show();
+//					Toast.makeText(getApplicationContext(), strUsuario.concat("U"),
+//							   Toast.LENGTH_LONG).show();
+//					Toast.makeText(getApplicationContext(), strEmail.concat("E"),
+//							   Toast.LENGTH_LONG).show();
+//					
+//					Toast.makeText(getApplicationContext(), strSenha.concat("S") ,
+//							   Toast.LENGTH_LONG).show();  					
+//					Toast.makeText(getApplicationContext(), strConfirmarSenha.concat("SC"),
+//							   Toast.LENGTH_LONG).show();
 					
 					
 				}
@@ -106,7 +106,7 @@ public class UsuarioActivity extends Activity {
     private class AsyncPutUsuario extends AsyncTask<Void, Void, Void>
     {
         private String response;
-        private JSONObject param;
+        private JSONObject jsonUsuario,param;
         private ProgressDialog pDialog;
         private String usuario;
         private String email;
@@ -137,11 +137,13 @@ public class UsuarioActivity extends Activity {
 
             param = new JSONObject();
 
+            jsonUsuario = new JSONObject();
             try {
                 param.put("nome", usuario);
                 param.put("password_confirmation", senha);
                 param.put("password", senha);
                 param.put("email", email);
+                jsonUsuario.put("usuario", param);
             }
             catch(Exception e)
             {
@@ -149,8 +151,8 @@ public class UsuarioActivity extends Activity {
                 Log.i("jsonObject: ", "> ERRO");
             }
             finally {
-                Log.i("jsonObject: ", "> " + param.toString());
-                response = webreq.makeWebServicePOST(UsuarioUrl, param);
+                Log.i("jsonObject: ", "> " + jsonUsuario.toString());
+                response = webreq.makeWebServicePOST(UsuarioUrl, jsonUsuario);
                 return null;
             }
         }

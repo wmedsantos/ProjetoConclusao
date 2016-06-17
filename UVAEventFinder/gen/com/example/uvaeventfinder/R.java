@@ -28,7 +28,11 @@ public final class R {
         public static final int ic_launcher=0x7f020002;
         public static final int ic_launcher_bkp=0x7f020003;
         public static final int logotopo=0x7f020004;
-        public static final int webday2016=0x7f020005;
+        public static final int petroleoegas=0x7f020005;
+        public static final int rioitech=0x7f020006;
+        public static final int sqlazure=0x7f020007;
+        public static final int webday2016=0x7f020008;
+        public static final int workshop5=0x7f020009;
     }
     public static final class id {
         public static final int TableLayout1=0x7f09000a;
