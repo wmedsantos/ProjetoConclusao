@@ -50,7 +50,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		
 		//Tabela Inscrição
 		db.execSQL("CREATE TABLE inscricao(_id INTEGER PRIMARY KEY, _id_publico INTEGER"+
-		"_id_sessao INTEGER NOT NULL,data TEXT,FOREIGN KEY (_id_publico) REFERENCES publico(_id),"+
+		"_id_sessao INTEGER NOT NULL,data DATETIME DEFAULT CURRENT_TIMESTAMP,FOREIGN KEY (_id_publico) REFERENCES publico(_id),"+
 		"FOREIGN KEY (_id_sessao) REFERENCES sessao(_id))");
 		
 		//Tabela opinião
