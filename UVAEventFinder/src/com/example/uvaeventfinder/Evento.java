@@ -14,20 +14,25 @@ public class Evento implements Serializable {
     private String site;
     private int vagasdisponiveis;
     private String url;
+    private String palestrante; 
+    private String imagem;
     
     public Evento(int id, String nome, String descricao, String datainicio,String datafim, 
-    		String local, String endereco,String site, String vagasdisponiveis, String url)
+    		String local, String endereco,String site, String vagasdisponiveis, String url,
+    		String palestrante,String imagem)
     {
-        this.id = id;
-        this.nome = nome;
-        this.descricao = descricao;
-        this.datainicio = datainicio;
-        this.datafim = datafim;
-        this.local = local;
-        this.endereco = endereco;
-        this.site = site;
-        this.vagasdisponiveis = Integer.parseInt(vagasdisponiveis);
-        this.url = url;
+        this.setId(id);
+        this.setNome(nome);
+        this.setDescricao(descricao);
+        this.setDatainicio(datainicio);
+        this.setDatafim(datafim);
+        this.setLocal(local);
+        this.setEndereco(endereco);
+        this.setSite(site);
+        this.setVagasdisponiveis(Integer.parseInt(vagasdisponiveis));
+        this.setUrl(url);
+        this.setPalestrante(palestrante); 
+        this.setImagem(imagem); 
     }
     
     public int getId() {
@@ -89,5 +94,21 @@ public class Evento implements Serializable {
 	}
 	public void setUrl(String url) {
 		this.url = url;
+	}
+
+	public String getPalestrante() {
+		return palestrante;
+	}
+
+	public void setPalestrante(String palestrante) {
+		this.palestrante = palestrante;
+	}
+
+	public String getImagem() {
+		return imagem;
+	}
+
+	public void setImagem(String imagem) {
+		this.imagem = imagem;
 	}
 }

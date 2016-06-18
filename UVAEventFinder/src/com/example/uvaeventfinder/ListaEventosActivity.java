@@ -176,9 +176,12 @@ public class ListaEventosActivity extends Activity {
 	                        String site = jsonObject.getString("site");
 	                        String vagasdisponiveis = jsonObject.getString("vagasdisponiveis");
 	                        String url = jsonObject.getString("url");
+	                        String palestrante = jsonObject.getString("palestrante");
+	                        String imagem = jsonObject.getString("imagem");
+	                        
 	                        int id = jsonObject.getInt("id");
 	                        listEventos.add(new Evento(id, nome, descricao, datainicio,datafim, 
-	                        		local, endereco,site, vagasdisponiveis, url));
+	                        		local, endereco,site, vagasdisponiveis, url, palestrante, imagem));
 	                        listStrEventos.add(nome.concat(" - ").concat(
 	                        		datainicio.substring(2,8)));
 	                    }
