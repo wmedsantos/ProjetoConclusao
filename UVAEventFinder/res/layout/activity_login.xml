@@ -54,13 +54,13 @@
 
     <TableRow android:gravity="center" >
 
-        <EditText
+          <EditText
             android:id="@+id/edtSenha"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.14"
             android:ems="10"
-            android:inputType="text"
+            android:inputType="textPassword"
             android:labelFor="@+id/txwSenha" />
     </TableRow>
 

@@ -76,7 +76,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.14"
             android:ems="10"
-            android:inputType="text"
+            android:inputType="textPassword"
             android:labelFor="@+id/txvSenha" />
     </TableRow>
 <TableRow android:gravity="center" >
@@ -97,7 +97,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.14"
             android:ems="10"
-            android:inputType="text"
+            android:inputType="textPassword"
             android:labelFor="@+id/txvConfirmarSenha" />
     </TableRow>
     <TableRow
