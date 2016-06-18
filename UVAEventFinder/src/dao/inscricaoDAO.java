@@ -51,9 +51,10 @@ public class inscricaoDAO {
 		return inscricoes;
 	}
 
-	// Inserir ID_sessao para inscrição
+	// Inserir ID_sessao e recuperar ID_publico para efetivar inscrição
 	public long salvarInscricao(Inscricao model) {
 		ContentValues valores = new ContentValues();
+		valores.put(DatabaseHelper.Inscricao._ID_PUBLICO, model.get_id_publico());
 		valores.put(DatabaseHelper.Inscricao._ID_SESSAO, model.get_id_sessao());
 
 		if (model.get_id() != null) {
